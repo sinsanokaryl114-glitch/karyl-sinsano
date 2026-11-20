@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KARYL SINSANO</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #080817;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    padding: 50px;
+}
+
+h1 {
+    font-size: clamp(40px, 9vw, 100px);
+    font-weight: 900;
+    letter-spacing: 8px;
+    color: white;
+    background: linear-gradient(
+        90deg,
+        #00eaff,
+        #a855f7,
+        #ff00cc,
+        #00eaff
+    );
+    background-size: 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradient 5s linear infinite,
+               float 3s ease-in-out infinite;
+    filter: drop-shadow(0 0 15px #00eaff);
+}
+
+.subtitle {
+    color: #aaa;
+    letter-spacing: 8px;
+    font-size: 14px;
+    margin-top: 25px;
+}
+
+.line {
+    width: 150px;
+    height: 3px;
+    margin: 25px auto;
+    background: linear-gradient(90deg, #00eaff, #a855f7);
+    border-radius: 10px;
+    box-shadow: 0 0 15px #00eaff;
+}
+
+@keyframes gradient {
+    0% { background-position: 0%; }
+    100% { background-position: 300%; }
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-12px); }
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>KARYL SINSANO</h1>
+    <div class="line"></div>
+    <p class="subtitle">DREAM • CREATE • INNOVATE</p>
+</div>
+
+</body>
+</html>
